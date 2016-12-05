@@ -24,6 +24,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
 
 $api_instance = new Swagger\Client\Api\TreatmentsApi();
 $body = new \Swagger\Client\Model\Treatments(); // \Swagger\Client\Model\Treatments | Treatments to be uploaded.
@@ -73,6 +74,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
 
 $api_instance = new Swagger\Client\Api\TreatmentsApi();
 $find = "find_example"; // string | The query used to find entries, supports nested query syntax.  Examples `find[insulin][$gte]=3` `find[carb][$gte]=100` `find[eventType]=Correction+Bolus` All find parameters are interpreted as strings.

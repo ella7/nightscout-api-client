@@ -23,6 +23,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
 
 $api_instance = new Swagger\Client\Api\ProfileApi();
 

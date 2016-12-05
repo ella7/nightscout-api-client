@@ -30,6 +30,8 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
+
 
 $api_instance = new Swagger\Client\Api\EntriesApi();
 $body = new \Swagger\Client\Model\Entries(); // \Swagger\Client\Model\Entries | Entries to be uploaded.
@@ -79,6 +81,8 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
+
 
 $api_instance = new Swagger\Client\Api\EntriesApi();
 $storage = "storage_example"; // string | `entries`, or `treatments` to select the storage layer.
@@ -135,6 +139,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
 
 $api_instance = new Swagger\Client\Api\EntriesApi();
 $find = "find_example"; // string | The query used to find entries, support nested query syntax, for example `find[dateString][$gte]=2015-08-27`.  All find parameters are interpreted as strings.
@@ -187,6 +192,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
 
 $api_instance = new Swagger\Client\Api\EntriesApi();
 $spec = "spec_example"; // string | entry id, such as `55cf81bc436037528ec75fa5` or a type filter such as `sgv`, `mbg`, etc.
@@ -241,6 +247,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
 
 $api_instance = new Swagger\Client\Api\EntriesApi();
 $find = "find_example"; // string | The query used to find entries, support nested query syntax, for example `find[dateString][$gte]=2015-08-27`.  All find parameters are interpreted as strings.
@@ -292,6 +299,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
 
 $api_instance = new Swagger\Client\Api\EntriesApi();
 $storage = "storage_example"; // string | Prefix to use in constructing a prefix-based regex, default is `entries`.
@@ -354,6 +362,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
 
 $api_instance = new Swagger\Client\Api\EntriesApi();
 $prefix = "prefix_example"; // string | Prefix to use in constructing a prefix-based regex.
@@ -410,6 +419,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('api_secret', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('api_secret', 'Bearer');
+Swagger\Client\Configuration::getDefaultConfiguration()setHost('https://{YOUR_NS_SITE}/api/v1');
 
 $api_instance = new Swagger\Client\Api\EntriesApi();
 $prefix = "prefix_example"; // string | Prefix to use in constructing a prefix-based regex.
