@@ -80,7 +80,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://localhost/api/v1*
+All URIs are relative to the host set in property $host in Swagger\Client\Configuration
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
