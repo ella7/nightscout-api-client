@@ -72,7 +72,6 @@ class DebugApi
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
-            $apiClient->getConfig()->setHost('https://localhost/api/v1');
         }
 
         $this->apiClient = $apiClient;
