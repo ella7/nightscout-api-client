@@ -1,13 +1,14 @@
 {
-    "name": "/",
+    "name": "ella7/nightscout-api-client",
     "description": "",
     "keywords": [
         "swagger",
         "php",
         "sdk",
-        "api"
+        "api",
+        "nightscout"
     ],
-    "homepage": "http://swagger.io",
+    "homepage": "https://github.com/ella7/nightscout-api-client",
     "license": "Apache-2.0",
     "authors": [
         {
