@@ -105,7 +105,7 @@ class TreatmentsApi
      *
      * Add new treatments.
      *
-     * @param \Swagger\Client\Model\Treatments $body Treatments to be uploaded. (required)
+     * @param array of \Swagger\Client\Model\Treatment $body Treatments to be uploaded. (required)
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @return void
      */
@@ -160,7 +160,7 @@ class TreatmentsApi
         // this endpoint requires API key authentication
         $apiKey = $this->apiClient->getApiKeyWithPrefix('api_secret');
         if (strlen($apiKey) !== 0) {
-            $headerParams['api_secret'] = $apiKey;
+            $headerParams['api-secret'] = $apiKey;
         }
         // make the API Call
         try {
@@ -191,7 +191,7 @@ class TreatmentsApi
      * @param string $find The query used to find entries, supports nested query syntax.  Examples &#x60;find[insulin][$gte]&#x3D;3&#x60; &#x60;find[carb][$gte]&#x3D;100&#x60; &#x60;find[eventType]&#x3D;Correction+Bolus&#x60; All find parameters are interpreted as strings. (optional)
      * @param float $count Number of entries to return. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return \Swagger\Client\Model\Treatments
+     * @return \Swagger\Client\Model\Treatment[]
      */
     public function treatmentsGet($find = null, $count = null)
     {
@@ -207,7 +207,7 @@ class TreatmentsApi
      * @param string $find The query used to find entries, supports nested query syntax.  Examples &#x60;find[insulin][$gte]&#x3D;3&#x60; &#x60;find[carb][$gte]&#x3D;100&#x60; &#x60;find[eventType]&#x3D;Correction+Bolus&#x60; All find parameters are interpreted as strings. (optional)
      * @param float $count Number of entries to return. (optional)
      * @throws \Swagger\Client\ApiException on non-2xx response
-     * @return array of \Swagger\Client\Model\Treatments, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Swagger\Client\Model\Treatment, HTTP status code, HTTP response headers (array of strings)
      */
     public function treatmentsGetWithHttpInfo($find = null, $count = null)
     {
@@ -244,7 +244,7 @@ class TreatmentsApi
         // this endpoint requires API key authentication
         $apiKey = $this->apiClient->getApiKeyWithPrefix('api_secret');
         if (strlen($apiKey) !== 0) {
-            $headerParams['api_secret'] = $apiKey;
+            $headerParams['api-secret'] = $apiKey;
         }
         // make the API Call
         try {
@@ -254,7 +254,7 @@ class TreatmentsApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Swagger\Client\Model\Treatments',
+                '\Swagger\Client\Model\Treatment[]',
                 '/treatments'
             );
 
@@ -262,7 +262,7 @@ class TreatmentsApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\Treatments', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Swagger\Client\Model\Treatment[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 default:

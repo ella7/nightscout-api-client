@@ -160,7 +160,7 @@ class EntriesApi
         // this endpoint requires API key authentication
         $apiKey = $this->apiClient->getApiKeyWithPrefix('api_secret');
         if (strlen($apiKey) !== 0) {
-            $headerParams['api_secret'] = $apiKey;
+            $headerParams['api-secret'] = $apiKey;
         }
         // make the API Call
         try {
@@ -272,7 +272,7 @@ class EntriesApi
         // this endpoint requires API key authentication
         $apiKey = $this->apiClient->getApiKeyWithPrefix('api_secret');
         if (strlen($apiKey) !== 0) {
-            $headerParams['api_secret'] = $apiKey;
+            $headerParams['api-secret'] = $apiKey;
         }
         // make the API Call
         try {
@@ -360,7 +360,7 @@ class EntriesApi
         // this endpoint requires API key authentication
         $apiKey = $this->apiClient->getApiKeyWithPrefix('api_secret');
         if (strlen($apiKey) !== 0) {
-            $headerParams['api_secret'] = $apiKey;
+            $headerParams['api-secret'] = $apiKey;
         }
         // make the API Call
         try {
@@ -466,7 +466,7 @@ class EntriesApi
         // this endpoint requires API key authentication
         $apiKey = $this->apiClient->getApiKeyWithPrefix('api_secret');
         if (strlen($apiKey) !== 0) {
-            $headerParams['api_secret'] = $apiKey;
+            $headerParams['api-secret'] = $apiKey;
         }
         // make the API Call
         try {
@@ -558,7 +558,7 @@ class EntriesApi
         // this endpoint requires API key authentication
         $apiKey = $this->apiClient->getApiKeyWithPrefix('api_secret');
         if (strlen($apiKey) !== 0) {
-            $headerParams['api_secret'] = $apiKey;
+            $headerParams['api-secret'] = $apiKey;
         }
         // make the API Call
         try {
@@ -712,7 +712,7 @@ class EntriesApi
         // this endpoint requires API key authentication
         $apiKey = $this->apiClient->getApiKeyWithPrefix('api_secret');
         if (strlen($apiKey) !== 0) {
-            $headerParams['api_secret'] = $apiKey;
+            $headerParams['api-secret'] = $apiKey;
         }
         // make the API Call
         try {
@@ -832,7 +832,7 @@ class EntriesApi
         // this endpoint requires API key authentication
         $apiKey = $this->apiClient->getApiKeyWithPrefix('api_secret');
         if (strlen($apiKey) !== 0) {
-            $headerParams['api_secret'] = $apiKey;
+            $headerParams['api-secret'] = $apiKey;
         }
         // make the API Call
         try {
@@ -952,7 +952,7 @@ class EntriesApi
         // this endpoint requires API key authentication
         $apiKey = $this->apiClient->getApiKeyWithPrefix('api_secret');
         if (strlen($apiKey) !== 0) {
-            $headerParams['api_secret'] = $apiKey;
+            $headerParams['api-secret'] = $apiKey;
         }
         // make the API Call
         try {

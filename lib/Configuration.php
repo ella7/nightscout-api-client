@@ -165,7 +165,7 @@ class Configuration
      */
     public function setApiKey($apiKeyIdentifier, $key)
     {
-        $this->apiKeys[$apiKeyIdentifier] = $key;
+        $this->apiKeys[$apiKeyIdentifier] = sha1($key);
         return $this;
     }
 
