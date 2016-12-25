@@ -212,7 +212,7 @@ class TreatmentsApi
     public function treatmentsGetWithHttpInfo($find = null, $count = null)
     {
         // parse inputs
-        $resourcePath = "/treatments";
+        $resourcePath = "/treatments.{format}";
         $httpBody = '';
         $queryParams = [];
         $headerParams = [];
@@ -225,7 +225,9 @@ class TreatmentsApi
 
         // query params
         if ($find !== null) {
-            $queryParams['find'] = $this->apiClient->getSerializer()->toQueryValue($find);
+            foreach ($find as $key => $value) {
+                $queryParams['find['.$key.']'] = $this->apiClient->getSerializer()->toQueryValue($value);
+            }
         }
         // query params
         if ($count !== null) {
